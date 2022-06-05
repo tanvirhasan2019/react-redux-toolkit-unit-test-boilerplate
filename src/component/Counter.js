@@ -1,4 +1,9 @@
 import React from 'react'
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from '../features/counter/counterSlice'
 export default function Counter() {
@@ -6,12 +11,23 @@ export default function Counter() {
     const value = useSelector(state => state.counter)
     return (
         <div>
-            <h1>Redux state counter</h1>
-            <div>
-                <button style={{padding : '10px', margin : '10px'}} onClick={() => dispatch(increment())}>+</button>
-                {value?.value} 
-                <button style={{padding : '10px', margin : '10px'}} onClick={() => dispatch(decrement())}>-</button>
-            </div>
+            <Card elevation={2} sx={{ maxWidth: 345, p: 2 }}>
+                <Typography align='center' variant='h4'>
+                    Redux state counter
+                </Typography>
+                <CardContent>
+                    <Grid
+                        container
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                    >
+                        <Button sx={{ m: 1, p: 1 }} onClick={() => dispatch(increment())} variant="outlined">+</Button>
+                        {value?.value}
+                        <Button sx={{ m: 1, p: 1 }} onClick={() => dispatch(decrement())} variant="outlined">-</Button>
+                    </Grid>
+                </CardContent>
+            </Card>
         </div>
     )
 }
