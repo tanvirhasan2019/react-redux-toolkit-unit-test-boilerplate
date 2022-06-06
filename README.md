@@ -1,5 +1,11 @@
+### `Counter`
 ![Counter](src/images/main1.png)
+
+
+### `UserDetails`
 ![Users list](src/images/main2.png)
+
+### `Footer`
 ![Users Details](src/images/main3.png)
 
 ### `npm start`
