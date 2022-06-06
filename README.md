@@ -1,3 +1,7 @@
+![Counter](src/images/main1.png)
+![Users list](src/images/main2.png)
+![Users Details](src/images/main3.png)
+
 ### `npm start`
 
 Runs the app in the development mode.\
