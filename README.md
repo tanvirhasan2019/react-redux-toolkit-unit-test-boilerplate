@@ -20,7 +20,7 @@ Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 
-### Demo
+### `Demo`
 
 The project was deployed to: [react-redux-toolkit/unit-test/netlify](https://merry-cucurucho-d8d917.netlify.app/)
 
